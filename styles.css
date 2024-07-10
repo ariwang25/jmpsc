@@ -1,0 +1,98 @@
+body {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 24px;
+    line-height: 1.6;
+    /* padding-top: 10rem; */
+    color: #333; 
+    background-color: #e0f7fa; 
+}
+
+header {
+    background-color: #3c9ead;
+    color: #fff;
+    padding: 1rem;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    /* z-index: 100; */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section { /* SECTION FORMATTING */
+    padding: 60px 40px;
+    min-height: 50vh; /* 50% viewport height */
+}
+
+#home {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: #caf8fa;
+}
+.align-right {
+    max-width: 50%; /* Adjust size as needed */
+    height: auto;
+    flex-shrink: 0;
+}
+#home p {
+    text-align:justify;
+    flex: 1;
+    margin-right: 60px;
+}
+
+
+#about {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center children horizontally */
+    background-color: #ffffff;
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add padding around the section */
+}
+.align-center {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    height: auto;
+    margin: 20px 0; /* Add margin to separate the image from text */
+}
+
+#sponsors {
+    background-color: #caf8fa;
+}
+
+#register {
+    background-color: #fff;
+}
+
+footer {
+    background-color: #3c9ead;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
