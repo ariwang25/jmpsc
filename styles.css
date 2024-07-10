@@ -68,12 +68,7 @@ section { /* SECTION FORMATTING */
     align-items: center; /* Center children horizontally */
     background-color: #ffffff;
     text-align: center; /* Center-align text */
-    padding: 20px; /* Add padding around the section */
-}
-.align-center {
-    max-width: 100%; /* Ensure the image doesn't exceed the container width */
-    height: auto;
-    margin: 20px 0; /* Add margin to separate the image from text */
+    padding: 50px; /* Add padding around the section */
 }
 
 #sponsors {
@@ -85,6 +80,8 @@ section { /* SECTION FORMATTING */
 }
 
 .staff-grid {
+    margin-left: 100px;
+    margin-right: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 40px;
