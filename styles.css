@@ -1,6 +1,6 @@
 body {
     font-family: "Lexend", sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.6;
     padding-top: 5rem;
     color: #333; 
@@ -67,7 +67,7 @@ main {
 }
 
 section { /* SECTION FORMATTING */
-    padding: 60px 40px;
+    padding:60px 100px;
     min-height: 50vh; /* 50% viewport height */
 }
 
