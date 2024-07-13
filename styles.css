@@ -7,6 +7,15 @@ body {
     background-color: #e0f7fa; 
 }
 
+a {
+    color: #c8511c;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    color: #ff4343
+}
 
 header {
     background-color: #3c9ead;
@@ -20,6 +29,7 @@ header {
     right: 0;
     width: 100%;
     text-align: center;
+    z-index: 100;
 }
 .navbar {
     display: flex;
@@ -36,6 +46,11 @@ header {
     margin: 25px;
     padding: 0;
     padding-right: 100px;
+    color: white;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+.nav-links a:hover {
+    color: #ffadad
 }
 
 .nav-links li {
@@ -94,7 +109,7 @@ section { /* SECTION FORMATTING */
     align-items: center;
     background-color: #ffffff;
     text-align: center;
-    padding: 50px;
+    padding: 80px;
 }
 
 #sponsors {
@@ -126,6 +141,7 @@ section { /* SECTION FORMATTING */
     transform: scale(1.05); /* Slight zoom effect */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for the hover effect */
     background-color: #f9faff;
+    z-index: 10;
 }
 
 .staff-member .description {
@@ -139,6 +155,84 @@ section { /* SECTION FORMATTING */
 .staff-member:hover .description {
     display: block
 }
+
+#competition-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#competition-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.division-section, .round-section {
+    margin-bottom: 40px;
+}
+
+.division-cards, .round-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.round-cards {
+    display: grid;
+    grid-template-columns: 1fr 40px 1fr;
+    gap: 20px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.division-card, .round-card {
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.division-card h3, .round-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #c8511c;
+}
+
+.division-card p, .round-card p {
+    font-size: 1em;
+    color: #333;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 40px solid #c8511c;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    align-self: center; /* Ensures the arrow is centered */
+}
+
+@media (max-width: 768px) {
+    .division-cards, .round-cards {
+        grid-template-columns: 1fr; /* Stack cards vertically on small screens */
+    }
+
+    .division-card {
+        text-align: left;
+    }
+
+    .arrow {
+        border-left: 20px solid #c8511c;
+        border-right: 20px solid transparent;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        margin: 20px auto;
+    }
+}
+
 
 footer {
     background-color: #3c9ead;
