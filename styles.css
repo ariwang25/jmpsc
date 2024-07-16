@@ -1,10 +1,11 @@
+/* General styles for the body */
 body {
     font-family: "Lexend", sans-serif;
     font-size: 1.2em;
     line-height: 1.6;
     padding-top: 5rem;
-    color: #333; 
-    background-color: #e0f7fa; 
+    color: #333;
+    background-color: #e0f7fa;
 }
 
 a {
@@ -14,9 +15,10 @@ a {
 }
 
 a:hover {
-    color: #ff4343
+    color: #ff4343;
 }
 
+/* Header styles */
 header {
     background-color: #3c9ead;
     color: #fff;
@@ -30,16 +32,22 @@ header {
     width: 100%;
     text-align: center;
     z-index: 100;
+    box-sizing: border-box;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks in the navbar */
 }
+
 .logo img {
     height: 75px;
 }
+
 .nav-links {
     list-style-type: none;
     display: flex;
@@ -49,8 +57,9 @@ header {
     color: white;
     transition: color 0.3s ease; /* Smooth color transition */
 }
+
 .nav-links a:hover {
-    color: #ffadad
+    color: #ffadad;
 }
 
 .nav-links li {
@@ -62,51 +71,50 @@ header {
     text-decoration: none;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Ensure responsive design for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Keep horizontal layout */
+    }
+
+    .nav-links {
+        flex-wrap: nowrap; /* Prevent wrapping of links */
+    }
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
+/* Main content and other styles */
 main {
     padding: 2rem;
 }
 
-section { /* SECTION FORMATTING */
-    padding:60px 100px;
+section {
+    padding: 60px 100px;
     min-height: 50vh; /* 50% viewport height */
 }
 
 #home {
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
     background-color: #caf8fa;
     line-height: 1.5;
 }
+
 .align-right {
     max-width: 50%; /* Adjust size as needed */
     height: auto;
     flex-shrink: 0;
 }
+
 #home p {
-    text-align:justify;
+    text-align: justify;
     flex: 1;
     margin-right: 60px;
 }
 
 #about {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     background-color: #ffffff;
     text-align: center;
@@ -116,10 +124,10 @@ section { /* SECTION FORMATTING */
 #sponsors {
     background-color: #caf8fa;
 }
+
 #archive {
     background-color: #fff;
 }
-
 
 .staff-grid {
     margin-left: 100px;
@@ -140,6 +148,7 @@ section { /* SECTION FORMATTING */
     text-align: center;
     font-size: 1em;
 }
+
 .staff-member:hover {
     transform: scale(1.05); /* Slight zoom effect */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for the hover effect */
@@ -156,7 +165,7 @@ section { /* SECTION FORMATTING */
 }
 
 .staff-member:hover .description {
-    display: block
+    display: block;
 }
 
 #competition-info {
@@ -172,7 +181,7 @@ section { /* SECTION FORMATTING */
 
 .division-section, .round-section {
     margin-bottom: 40px;
-    font-size: 1em
+    font-size: 1em;
 }
 
 .division-cards, .round-cards {
@@ -236,7 +245,6 @@ section { /* SECTION FORMATTING */
         margin: 20px auto;
     }
 }
-
 
 footer {
     background-color: #3c9ead;
